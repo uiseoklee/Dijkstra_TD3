@@ -1,0 +1,77 @@
+device = cpu
+simulation_speed = 1
+state_size = 364
+action_size = 2
+hidden_size = 512
+input_size = 364
+batch_size = 128
+buffer_size = 1000000
+discount_factor = 0.99
+learning_rate = 0.003
+tau = 0.003
+step_time = 0.01
+loss_function = <function smooth_l1_loss at 0x7fbc96764e50>
+epsilon = 1.0
+epsilon_decay = 0.9995
+epsilon_minimum = 0.05
+reward_function = A
+backward_enabled = False
+stacking_enabled = False
+stack_depth = 3
+frame_skip = 4
+networks = [Actor(
+  (fa1): Linear(in_features=364, out_features=512, bias=True)
+  (fa2): Linear(in_features=512, out_features=512, bias=True)
+  (fa3): Linear(in_features=512, out_features=256, bias=True)
+  (fa4): Linear(in_features=256, out_features=0, bias=True)
+  (fa5): Linear(in_features=2, out_features=0, bias=True)
+  (fa6): Linear(in_features=0, out_features=2, bias=True)
+), Actor(
+  (fa1): Linear(in_features=364, out_features=512, bias=True)
+  (fa2): Linear(in_features=512, out_features=512, bias=True)
+  (fa3): Linear(in_features=512, out_features=256, bias=True)
+  (fa4): Linear(in_features=256, out_features=0, bias=True)
+  (fa5): Linear(in_features=2, out_features=0, bias=True)
+  (fa6): Linear(in_features=0, out_features=2, bias=True)
+), Critic(
+  (l1): Linear(in_features=364, out_features=256, bias=True)
+  (l2): Linear(in_features=2, out_features=256, bias=True)
+  (l3): Linear(in_features=512, out_features=512, bias=True)
+  (l4): Linear(in_features=512, out_features=1, bias=True)
+  (l5): Linear(in_features=364, out_features=256, bias=True)
+  (l6): Linear(in_features=2, out_features=256, bias=True)
+  (l7): Linear(in_features=512, out_features=512, bias=True)
+  (l8): Linear(in_features=512, out_features=1, bias=True)
+), Critic(
+  (l1): Linear(in_features=364, out_features=256, bias=True)
+  (l2): Linear(in_features=2, out_features=256, bias=True)
+  (l3): Linear(in_features=512, out_features=512, bias=True)
+  (l4): Linear(in_features=512, out_features=1, bias=True)
+  (l5): Linear(in_features=364, out_features=256, bias=True)
+  (l6): Linear(in_features=2, out_features=256, bias=True)
+  (l7): Linear(in_features=512, out_features=512, bias=True)
+  (l8): Linear(in_features=512, out_features=1, bias=True)
+)]
+iteration = 0
+noise = <turtlebot3_drl.common.ounoise.OUNoise object at 0x7fbbbe000a00>
+policy_noise = 0.2
+noise_clip = 0.5
+policy_freq = 2
+last_actor_loss = 0
+actor_optimizer = AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.003
+    weight_decay: 0.01
+)
+critic_optimizer = AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.003
+    weight_decay: 0.01
+)
+
