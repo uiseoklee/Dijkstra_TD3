@@ -33,9 +33,9 @@ ros2 run turtlebot3_drl test_agent td3 'examples/td3_0_stage9' 7400
 
 ### Terminal 4
 ```
-ros2 run turtlebot3_drl gazebo_goals
+ros2 run turtlebot3_drl dijkstra
 ```
-<If you have error in Terminal 3, you just need to run that command again>
+
 
 
 Robot Navigation was implemented as follows. 
