@@ -27,8 +27,8 @@ git clone https://github.com/uiseoklee/Dijkstra_TD3.git
 cd ~/Dijkstra_TD3
 colcon build --symlink-install
 ```
-<If you have "dart" error during build, you should clone **dart** repository>
-<If you have error during build, you just need to run "source opt/ros/foxy/setup.bash">
+If you have "dart" error during build, you should clone **dart** repository.
+If you have error during build, you just need to run "source opt/ros/foxy/setup.bash".
 ```
 source install/setup.bash
 ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
@@ -48,12 +48,6 @@ ros2 run turtlebot3_drl test_agent td3 'examples/td3_0_stage9' 7400
 ```
 ros2 run turtlebot3_drl dijkstra
 ```
-and press the **play** button in Gazebo.
+And press the **play** button in Gazebo.
 A map will appear, and you can click on your desired destination using the mouse.  
 The system will automatically generate a path, and the agent will perform autonomous navigation to reach the selected goal.
-
-
-Robot Navigation was implemented as follows. 
-1. Global Navigation Find the shortest path using Dijkstra's algorithm.
-2. Local Navigation Avoid obstacles using Deep Reinforcement Learning.
-3. All development environments are ROS2 based.
