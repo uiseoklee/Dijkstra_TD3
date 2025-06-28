@@ -27,7 +27,7 @@ git clone https://github.com/uiseoklee/Dijkstra_TD3.git
 cd ~/Dijkstra_TD3
 colcon build --symlink-install
 ```
-<If you have "dart" error during build, you should clone NAVIGATION/dart>
+<If you have "dart" error during build, you should clone **dart** repository>
 <If you have error during build, you just need to run "source opt/ros/foxy/setup.bash">
 ```
 source install/setup.bash
