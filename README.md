@@ -11,15 +11,14 @@
 ```
 cd
 git clone https://github.com/uiseoklee/Dijkstra_TD3.git
-cd ~/vaeplusddpg
+cd ~/Dijkstra_TD3
 colcon build --symlink-install
 ```
 <If you have "dart" error during build, you should clone NAVIGATION/dart>
 <If you have error during build, you just need to run "source opt/ros/foxy/setup.bash">
 ```
 source install/setup.bash
-cd src/turtlebot3_simulations/turtlebot3_gazebo
-ros2 launch turtlebot3_gazebo turtlebot3_drl_stage6.launch.py
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 
 ### Terminal 2
@@ -29,13 +28,7 @@ ros2 run turtlebot3_drl environment
 
 ### Terminal 3
 ```
-cd ~/vaeplusddpg/src/turtlebot3_drl/turtlebot3_drl/drl_agent
-ros2 run turtlebot3_drl train_agent ddpg
-```
-<If you have pt files(pretrained model), you can run test as blow>
-change: src/turtlebot3_drl/turtlebot3_drl/drl_agent/ddpg_pretrainedvae_final.py -> ddpg.py
-```
-ros2 run turtlebot3_drl test_agent ddpg 'ddpg_55_stage_6' 3600
+ros2 run turtlebot3_drl test_agent td3 'examples/td3_0_stage9' 7400
 ```
 
 ### Terminal 4
