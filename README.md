@@ -3,14 +3,14 @@
 
 # Installation
 ## Prerequisite
-Ubuntu 20.04
-ROS2 foxy
-Turtlebot3 packages (refer to turtlebot3 emanual)
+- Ubuntu 20.04
+- ROS2 foxy
+- Turtlebot3 packages (refer to turtlebot3 emanual)
 
 ### Terminal 1
 ```
 cd
-git clone https://github.com/uiseoklee/vaeplusddpg.git
+git clone (https://github.com/uiseoklee/Dijkstra_TD3.git)
 cd ~/vaeplusddpg
 colcon build --symlink-install
 ```
