@@ -1,5 +1,18 @@
-# Robot-Navigation-using-ROS2-ReinforcementL-Algorithm
+# Robot Navigation using ROS2 and Reinforcement Learning
 ![Demo](media/dijkstra_td3.gif)
+
+This project integrates **classical path planning** with **deep reinforcement learning (DRL)** to achieve intelligent robot navigation in dynamic environments. It is built on ROS2 and Gazebo, and demonstrated with a TurtleBot3 robot.
+
+### 🧭 System Overview
+
+1. **Global Navigation**  
+   Uses **Dijkstra’s algorithm** to compute the shortest path from the robot's current location to a user-defined goal on the map.
+
+2. **Local Navigation**  
+   Employs a **deep reinforcement learning agent** (TD3) trained to avoid dynamic obstacles and follow the global path safely.
+
+The result is a hybrid navigation system that combines the strengths of deterministic planning and learned behavior to enable autonomous, robust mobility.
+
 
 # Installation
 ## Prerequisite
