@@ -10,7 +10,7 @@
 ### Terminal 1
 ```
 cd
-git clone (https://github.com/uiseoklee/Dijkstra_TD3.git)
+git clone https://github.com/uiseoklee/Dijkstra_TD3.git
 cd ~/vaeplusddpg
 colcon build --symlink-install
 ```
