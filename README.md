@@ -35,7 +35,9 @@ ros2 run turtlebot3_drl test_agent td3 'examples/td3_0_stage9' 7400
 ```
 ros2 run turtlebot3_drl dijkstra
 ```
-
+and press the **play** button in Gazebo.
+A map will appear, and you can click on your desired destination using the mouse.  
+The system will automatically generate a path, and the agent will perform autonomous navigation to reach the selected goal.
 
 
 Robot Navigation was implemented as follows. 
