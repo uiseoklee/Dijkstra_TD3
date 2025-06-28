@@ -1,5 +1,5 @@
 # Robot Navigation using ROS2 and Reinforcement Learning
-![Demo](media/dijkstra_td3.gif)
+<img src="media/dijkstra_td3.gif" width="400"/>  
 
 This project integrates **classical path planning** with **deep reinforcement learning (DRL)** to achieve intelligent robot navigation in dynamic environments. It is built on ROS2 and Gazebo, and demonstrated with a TurtleBot3 robot.
 
@@ -27,7 +27,7 @@ git clone https://github.com/uiseoklee/Dijkstra_TD3.git
 cd ~/Dijkstra_TD3
 colcon build --symlink-install
 ```
-If you have "dart" error during build, you should clone **dart** repository.
+If you have "dart" error during build, you should clone my **dart** repository.
 If you have error during build, you just need to run "source opt/ros/foxy/setup.bash".
 ```
 source install/setup.bash
