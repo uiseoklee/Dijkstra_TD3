@@ -1,4 +1,5 @@
 # Robot-Navigation-using-ROS2-ReinforcementL-Algorithm
+![Demo](media/dijkstra_td3.gif)
 Robot Navigation was implemented as follows. 
 1. Global Navigation Find the shortest path using Dijkstra's algorithm.
 2. Local Navigation Avoid obstacles using Deep Reinforcement Learning.
