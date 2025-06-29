@@ -1,5 +1,5 @@
 # Robot Navigation using ROS2 and Reinforcement Learning
-<img src="media/dijkstra_td3.gif" width="600"/>  
+<img src="media/dijkstra_td3.gif" width="400"/>  
 
 This project integrates **classical path planning** with **deep reinforcement learning (DRL)** to achieve intelligent robot navigation in dynamic environments. It is built on ROS2 and Gazebo, and demonstrated with a TurtleBot3 robot.
 
